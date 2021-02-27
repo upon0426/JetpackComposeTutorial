@@ -3,11 +3,13 @@ package com.upon0426.jetpackcomposetutorial
 import android.os.Bundle
 import androidx.activity.compose.setContent
 import androidx.appcompat.app.AppCompatActivity
+import androidx.compose.foundation.Image
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.padding
 import androidx.compose.material.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 
@@ -24,6 +26,11 @@ class MainActivity : AppCompatActivity() {
         Column(
             modifier = Modifier.padding(16.dp)
         ) {
+            Image(
+                painter = painterResource(id = R.drawable.header),
+                contentDescription = null
+            )
+
             Text("A day in Shark Fin Cove")
             Text("Davenport, California")
             Text("December 2018")
