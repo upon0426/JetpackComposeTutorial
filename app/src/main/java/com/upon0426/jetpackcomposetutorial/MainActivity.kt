@@ -14,7 +14,12 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContent {
-            Text("Hello world!")
+            Greeting("Android")
         }
+    }
+
+    @Composable
+    fun Greeting(name: String) {
+        Text (text = "Hello $name!")
     }
 }
