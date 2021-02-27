@@ -4,10 +4,7 @@ import android.os.Bundle
 import androidx.activity.compose.setContent
 import androidx.appcompat.app.AppCompatActivity
 import androidx.compose.foundation.Image
-import androidx.compose.foundation.layout.Column
-import androidx.compose.foundation.layout.fillMaxWidth
-import androidx.compose.foundation.layout.height
-import androidx.compose.foundation.layout.padding
+import androidx.compose.foundation.layout.*
 import androidx.compose.material.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
@@ -37,6 +34,7 @@ class MainActivity : AppCompatActivity() {
                     .fillMaxWidth(),
                 contentScale = ContentScale.Crop
             )
+            Spacer(modifier = Modifier.padding(8.dp))
 
             Text("A day in Shark Fin Cove")
             Text("Davenport, California")
